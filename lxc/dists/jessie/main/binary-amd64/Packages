@@ -1,0 +1,342 @@
+Package: cgmanager
+Version: 0.39-2ubuntu2+debian1~jessie
+Architecture: amd64
+Maintainer: Serge Hallyn <serge.hallyn@ubuntu.com>
+Installed-Size: 420
+Depends: libc6 (>= 2.15), libcgmanager0 (>= 0.33), libdbus-1-3 (>= 1.2.16), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), init-system-helpers (>= 1.18~)
+Conflicts: cgmanager-utils
+Replaces: cgmanager-utils
+Provides: cgmanager-utils
+Homepage: http://cgmanager.linuxcontainers.org/
+Priority: optional
+Section: admin
+Filename: pool/main/c/cgmanager/cgmanager_0.39-2ubuntu2+debian1~jessie_amd64.deb
+Size: 84680
+SHA256: 2bc878b1b0e54174cc17b75a9847e8dbc5a5e87fae639f579be143fecb25e7d0
+SHA1: ddbcc2f9b0094dfab611ab1d46bdbab68837aef9
+MD5sum: a13645b6467faa886b07a33f3aac09cc
+Description: Central cgroup manager daemon
+ cgmanager provides a central cgroup manager daemon and a
+ per-namespace manager proxy, allowing users and programs
+ to administrate cgroups through D-Bus requests.
+ .
+ This package contains the cgroup management daemon and
+ proxy.
+
+Package: cgmanager-tests
+Source: cgmanager
+Version: 0.39-2ubuntu2+debian1~jessie
+Architecture: all
+Maintainer: Serge Hallyn <serge.hallyn@ubuntu.com>
+Installed-Size: 58
+Depends: cgmanager
+Homepage: http://cgmanager.linuxcontainers.org/
+Priority: optional
+Section: admin
+Filename: pool/main/c/cgmanager/cgmanager-tests_0.39-2ubuntu2+debian1~jessie_all.deb
+Size: 14362
+SHA256: 8cbcb3ba615a621e6987486ea171f03d98f4db29b0c3c2511d891e6cd27721e1
+SHA1: 295fc3a6b4c23df56ff37d41a07d730c7664388f
+MD5sum: 19bf31abc7244c3f1b1b6bbdbbf773d5
+Description: Central cgroup manager daemon (tests)
+ cgmanager provides a central cgroup manager daemon and a
+ per-namespace manager proxy, allowing users and programs
+ to administrate cgroups through D-Bus requests.
+ .
+ This package contains the test scripts.
+
+Package: libcgmanager-dev
+Source: cgmanager
+Version: 0.39-2ubuntu2+debian1~jessie
+Architecture: amd64
+Maintainer: Serge Hallyn <serge.hallyn@ubuntu.com>
+Installed-Size: 74
+Depends: libcgmanager0 (= 0.39-2ubuntu2+debian1~jessie), libdbus-1-dev, libnih-dbus-dev
+Multi-Arch: same
+Homepage: http://cgmanager.linuxcontainers.org/
+Priority: optional
+Section: libdevel
+Filename: pool/main/c/cgmanager/libcgmanager-dev_0.39-2ubuntu2+debian1~jessie_amd64.deb
+Size: 11420
+SHA256: be821566b64d44cfdb3b65d14425a6a17a3852868d77800f11e1467ad8e55ffd
+SHA1: abac14a93a51083b92359e26f84f5eb1997e6c52
+MD5sum: 31ef2c06bcde6818a9ae082cabc68f48
+Description: Central cgroup manager daemon (dev)
+ cgmanager provides a central cgroup manager daemon and a
+ per-namespace manager proxy, allowing users and programs
+ to administrate cgroups through D-Bus requests.
+ .
+ This package contains the static library and C header files
+ needed for developing software using libcgmanager.
+
+Package: libcgmanager0
+Source: cgmanager
+Version: 0.39-2ubuntu2+debian1~jessie
+Architecture: amd64
+Maintainer: Serge Hallyn <serge.hallyn@ubuntu.com>
+Installed-Size: 182
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0)
+Multi-Arch: same
+Homepage: http://cgmanager.linuxcontainers.org/
+Priority: optional
+Section: admin
+Filename: pool/main/c/cgmanager/libcgmanager0_0.39-2ubuntu2+debian1~jessie_amd64.deb
+Size: 41564
+SHA256: d280ea5f1e92828663b30759be3dc5fe61b60afd9a4376a839b3d843bdd6a79b
+SHA1: a04229094f0029e63bc35e09c1bf3997cfc42730
+MD5sum: af61163f072463e203fbb766fe192f40
+Description: Central cgroup manager daemon (client library)
+ cgmanager provides a central cgroup manager daemon and a
+ per-namespace manager proxy, allowing users and programs
+ to administrate cgroups through D-Bus requests.
+ .
+ This package contains the shared library.
+
+Package: liblxc1
+Source: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 609
+Pre-Depends: multiarch-support
+Depends: cgmanager | cgroup-lite, rsync, libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libcap2 (>= 1:2.10), libcgmanager0 (>= 0.32), libdbus-1-3 (>= 1.0.2), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), libseccomp2 (>= 1.0.1), libselinux1 (>= 1.32)
+Recommends: cgmanager, uidmap
+Conflicts: liblxc0
+Breaks: lxc (<< 0.9.0~alpha3-0ubuntu1~)
+Replaces: liblxc0, lxc (<< 0.9.0~alpha3-0ubuntu1~)
+Provides: liblxc0
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: admin
+Filename: pool/main/l/lxc/liblxc1_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 224820
+SHA256: 7fa57c512971e550e2be0e29dda7abbd15e935edee5e18e85494b04c01d82808
+SHA1: 5eb0d6447b92a26829f94d8dfa19655d53a5063a
+MD5sum: a850fff72da3281be62a10ec783cb47d
+Description: Linux Containers userspace tools (library)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the libraries.
+
+Package: libpam-cgm
+Source: cgmanager
+Version: 0.39-2ubuntu2+debian1~jessie
+Architecture: amd64
+Maintainer: Serge Hallyn <serge.hallyn@ubuntu.com>
+Installed-Size: 68
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.4), libcgmanager0 (>= 0.32), libdbus-1-3 (>= 1.0.2), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), libpam0g (>= 0.99.7.1), libpam-runtime (>= 1.0.1-6), cgmanager
+Homepage: http://cgmanager.linuxcontainers.org/
+Priority: optional
+Section: admin
+Filename: pool/main/c/cgmanager/libpam-cgm_0.39-2ubuntu2+debian1~jessie_amd64.deb
+Size: 15142
+SHA256: bf5c007870baf885e2be0bc768c9f8a1b50f2fba952f8083874150457526ce1e
+SHA1: 57ba77c0c200dce2638f232f974f019f14209994
+MD5sum: 520147483a488e39a10366e8afe51277
+Description: Central cgroup manager daemon (PAM module)
+ cgmanager provides a central cgroup manager daemon and a
+ per-namespace manager proxy, allowing users and programs
+ to administrate cgroups through D-Bus requests.
+ .
+ This provides a Pluggable Authentication Module (PAM) to provide
+ logged-in users with a set of cgroups which they can administer.
+ This allows for instance unprivileged containers.
+
+Package: lua-lxc
+Source: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 124
+Depends: liblua5.2-0, liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), lua-filesystem, lua5.2, libapparmor1 (>= 2.6~devel), libc6 (>= 2.14)
+Recommends: lxc-templates (>= 0.8.0~rc1-4ubuntu43)
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: interpreters
+Filename: pool/main/l/lxc/lua-lxc_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 50418
+SHA256: c4ce4e43d4f3fdba90e1c784674a0f8bff38ac2150f0256b75fb8b56c0b99522
+SHA1: 640c409046daba098e53428b3fcb5e5eab42091c
+MD5sum: aee70bd0044cda11079b14654716805f
+Description: Linux Containers userspace tools (LUA bindings)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the LUA bindings.
+
+Package: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 3672
+Depends: adduser, bridge-utils, dnsmasq-base, iptables, liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), python3, python3-lxc, apparmor, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.14), libcap2 (>= 1:2.10), libseccomp2 (>= 0.0.0~20120605), libselinux1 (>= 1.32)
+Recommends: lxc-templates (>= 0.8.0~rc1-4ubuntu43)
+Suggests: btrfs-tools, lvm2, lxctl
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: admin
+Filename: pool/main/l/lxc/lxc_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 532658
+SHA256: 47223aaf6a109d7c1a7209a7e7e4dbc283ad319523ac83247917efc4dc540a2d
+SHA1: 8e7b163084be4f706f4509238d2177a407cbe66c
+MD5sum: 14fd75d0ed844d6b6bc9e3c63bebb9a1
+Description: Linux Containers userspace tools
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package provides the lxc-* tools, which can be used to start a single
+ daemon in a container, or to boot an entire "containerized" system, and to
+ manage and debug your containers.
+
+Package: lxc-dbg
+Source: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1613
+Depends: lxc (= 1:1.1.4-0ubuntu1+debian1~jessie), lxc-dev (= 1:1.1.4-0ubuntu1+debian1~jessie)
+Homepage: https://linuxcontainers.org
+Priority: extra
+Section: debug
+Filename: pool/main/l/lxc/lxc-dbg_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 997286
+SHA256: 0f4744e229294daf7e3b6c6aa0bc25b7e11dec5bde6b96dad5dc22f8c114c29c
+SHA1: 6fba6a91686bc16f6c109ad4e69cb032ea8d8747
+MD5sum: b3299cb6e197cd8a8f73cfbadfe2509a
+Description: Linux Containers userspace tools (debug)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the debugging symbols.
+
+Package: lxc-dev
+Source: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 123
+Depends: lxc (= 1:1.1.4-0ubuntu1+debian1~jessie)
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: libdevel
+Filename: pool/main/l/lxc/lxc-dev_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 51060
+SHA256: bbd8dc575205ebb7b4b3c8db1c8afa28b720f81c78e2e6abc9b307496cd4630f
+SHA1: 953b7f70e11d1651c00034ae045edff59c20a343
+MD5sum: 84b936091352bfddc699380d384e0d3c
+Description: Linux Containers userspace tools (development)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the development files.
+
+Package: lxc-templates
+Source: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 391
+Depends: lxc (>= 0.8.0~rc1-4ubuntu43)
+Recommends: busybox-static, cloud-image-utils | cloud-utils, debootstrap | cdebootstrap, lxcfs, openssl, rsync, uuid-runtime, xz-utils
+Suggests: qemu-user-static
+Breaks: lxc (<< 0.8.0~rc1-4ubuntu43)
+Replaces: lxc (<< 0.8.0~rc1-4ubuntu43)
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: admin
+Filename: pool/main/l/lxc/lxc-templates_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 104552
+SHA256: 3a76c1c22973edfc493607a3282b3336c2efa79126239184ce314853ef3d0ce2
+SHA1: 82660f20855853ac624fbbc7987d811d36e16d18
+MD5sum: a9c25965471d8e2aa57ede70d00f1153
+Description: Linux Containers userspace tools (templates)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the templates.
+
+Package: lxc-tests
+Source: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 327
+Depends: liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), libapparmor1 (>= 2.6~devel), libc6 (>= 2.7)
+Recommends: lxc, lxc-templates
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: admin
+Filename: pool/main/l/lxc/lxc-tests_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 78832
+SHA256: d1809c6f017b2d0fda51b0ba27b54128366bf19bb21326eef4aa8636e1f5bb10
+SHA1: cbbc69c238d52932331116b8c355e95d46ba016d
+MD5sum: cf7b98e604d0bbf9872adb74e159c77b
+Description: Linux Containers userspace tools (test binaries)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the test binaries.
+
+Package: lxcfs
+Version: 0.10-0ubuntu2+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 145
+Depends: cgmanager, libc6 (>= 2.17), libcgmanager0 (>= 0.33), libdbus-1-3 (>= 1.0.2), libfuse2 (>= 2.8), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), init-system-helpers (>= 1.18~)
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: admin
+Filename: pool/main/l/lxcfs/lxcfs_0.10-0ubuntu2+debian1~jessie_amd64.deb
+Size: 24902
+SHA256: 7c0df68bb56baa461261d36e6737a3244faeac539489624d3dce5d6d15fdbd21
+SHA1: 2d284a27a4765cc499ddaf9a05251af467943aeb
+MD5sum: 178753eda06dff2c8566222861e5f6d9
+Description: FUSE based filesystem for LXC
+ LXCFS provides a FUSE based filesystem to improve the LXC experience
+ within the containers.
+ .
+ This filesystem offers both a cgroupfs-like view for use by
+ unprivileged containers which wouldn't otherwise be allowed to mount
+ cgroupfs. And a set of files that are meant to be bind-mounted over
+ their /proc equivalent to make them cgroup-aware.
+
+Package: python3-lxc
+Source: lxc
+Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 150
+Depends: liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), python3 (<< 3.5), python3 (>= 3.4~), libc6 (>= 2.4)
+Recommends: lxc-templates (>= 0.8.0~rc1-4ubuntu43)
+Homepage: https://linuxcontainers.org
+Priority: optional
+Section: python
+Filename: pool/main/l/lxc/python3-lxc_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
+Size: 60822
+SHA256: 22fafb60530d8af5c97aaabf7f549a3db976aaa51e6278c5f3690e8c5d7a396e
+SHA1: dcbd5394b7026ead2db94aea460fbc4adf47f5eb
+MD5sum: eb5ec9ad196fc48d7978dce485d8131e
+Description: Linux Containers userspace tools (Python 3.x bindings)
+ Containers are insulated areas inside a system, which have their own namespace
+ for filesystem, network, PID, IPC, CPU and memory allocation and which can be
+ created using the Control Group and Namespace features included in the Linux
+ kernel.
+ .
+ This package contains the Python 3.x bindings.
+

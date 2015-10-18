@@ -1,0 +1,29 @@
+Origin: debian-lxc.github.io
+Label: debian-lxc.github.io
+Suite: stable
+Codename: jessie
+Date: Sun, 18 Oct 2015 11:15:49 UTC
+Architectures: amd64
+Components: main
+Description: debian-lxc.github.io repo
+MD5Sum:
+ 042c50f8f3bc55782659fdac91623a3a 14467 main/binary-amd64/Packages
+ 89277200d7ede42bb072dedb3248f537 3531 main/binary-amd64/Packages.gz
+ ef5d8d1f42758a903611de25cc8f7068 148 main/binary-amd64/Release
+ 43760ae14c113b1962d16bc814f209db 5289 main/source/Sources
+ 2a201eaad10741f3844c88bc723e9ced 1803 main/source/Sources.gz
+ a16b1dd6b0796f6ce3e07aef3f4c0a70 149 main/source/Release
+SHA1:
+ acbbdd4d2550fecca71bc15209b5ad846beebf0e 14467 main/binary-amd64/Packages
+ dae2cc0dbb4153c6dd3fc7f24324569653671610 3531 main/binary-amd64/Packages.gz
+ 254ad80973e64ab033566b62cb4924b81bd1cc55 148 main/binary-amd64/Release
+ 8ba2479223ffcaa7c8bf0b420a850187eee8ccc7 5289 main/source/Sources
+ d28da4dccaac2cf8a39609b9aae6c26e33d7fc61 1803 main/source/Sources.gz
+ 78721083de1bf576e1a2522e38cc1f70c7dc4fd9 149 main/source/Release
+SHA256:
+ 1b44866a609fdad7ad25c0cffde162a69dd8cf6382594d589a79335b059b56c1 14467 main/binary-amd64/Packages
+ fafb3c469f2f1ae2e1c24a5f8c5209637ba8c1ae1510dcb892012d8e38f15d84 3531 main/binary-amd64/Packages.gz
+ a3b6999590d04be44c3b53afb3247f71ed0a0199521e62d02f4157e83dc09dee 148 main/binary-amd64/Release
+ 274a09fc8c71e6e75164a98a64128ad99d5ad31dad45f3f9d212d2e31db6e48c 5289 main/source/Sources
+ 86bacf8ca611ee74081b8481087f3e4a3524d88964c4c336d889ac692835f8e5 1803 main/source/Sources.gz
+ 1af63d830664d79fb922eb6b80478160529a725df8ce85480f9520ea12584a29 149 main/source/Release
