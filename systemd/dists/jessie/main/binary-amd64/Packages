@@ -1,0 +1,869 @@
+Package: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 1311
+Depends: libc6 (>= 2.17), debconf (>= 0.5) | debconf-2.0, python3, libapparmor-perl, lsb-base, debconf
+Suggests: apparmor-profiles, apparmor-profiles-extra, apparmor-docs, apparmor-utils
+Breaks: apparmor-easyprof-ubuntu (<< 1.2.22), apparmor-utils (<< 2.8.0-0ubuntu28), libapache2-mod-apparmor (<< 2.5.1-0ubuntu3), libvirt-bin (<< 1.2.6-0ubuntu6~), rsyslog (<< 7.4.4-1ubuntu9~)
+Replaces: apparmor-parser, apparmor-utils (<< 2.8.0-0ubuntu28), libapache2-mod-apparmor (<< 2.5.1-0ubuntu3)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: admin
+Filename: pool/main/a/apparmor/apparmor_2.10-2_amd64.deb
+Size: 401136
+SHA256: dd2a773fc3645a3f0819f608ff3a8d952b632e6a9908ec78c7b925710ed2fe59
+SHA1: be14703b623cc0373ba31347baabe7a2c62ae9f2
+MD5sum: 2c85b87294e10e6353f7f97acddbb516
+Description: user-space parser utility for AppArmor
+ This provides the system initialization scripts needed to use the
+ AppArmor Mandatory Access Control system, including the AppArmor Parser
+ which is required to convert AppArmor text profiles into machine-readable
+ policies that are loaded into the kernel for use with the AppArmor Linux
+ Security Module.
+
+Package: apparmor-docs
+Source: apparmor
+Version: 2.10-2
+Architecture: all
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 304
+Homepage: http://apparmor.net/
+Priority: extra
+Section: doc
+Filename: pool/main/a/apparmor/apparmor-docs_2.10-2_all.deb
+Size: 280998
+SHA256: bfa59b1a95505898e68bb415dbb275b3dc95307027077b3cca0db8dd8833e323
+SHA1: a8ae17409cb9ae61e20ff6b66740517898c96b01
+MD5sum: 3975a4d85d8665169e2ecc369fb7123f
+Description: documentation for AppArmor
+ This package provides some technical documentation for the AppArmor
+ Mandatory Access Control system. Currently this is only a single
+ PDF covering basic operation, written some time ago.
+
+Package: apparmor-easyprof
+Source: apparmor
+Version: 2.10-2
+Architecture: all
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 121
+Depends: python3.4, python3-apparmor
+Breaks: apparmor-utils (<< 2.8.0-0ubuntu14)
+Replaces: apparmor-utils (<< 2.8.0-0ubuntu14)
+Multi-Arch: foreign
+Homepage: http://apparmor.net/
+Priority: extra
+Section: admin
+Filename: pool/main/a/apparmor/apparmor-easyprof_2.10-2_all.deb
+Size: 53984
+SHA256: b2032a928836ee084df8e70fa2d7ceb78d261ccddafacee644f1ce5b8cd53f70
+SHA1: 1aa38c7286164668d6d0ed42a8a9ca9d82893c01
+MD5sum: 79fa146f33f64c929c4203e7dcb71b6e
+Description: AppArmor easyprof profiling tool
+ This provides the aa-easyprof utility which is an easy to use interface for
+ AppArmor policy generation. aa-easyprof supports the use of templates and
+ policy groups to quickly profile an application.
+
+Package: apparmor-notify
+Source: apparmor
+Version: 2.10-2
+Architecture: all
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 124
+Depends: libapparmor-perl, perl, libnotify-bin
+Homepage: http://apparmor.net/
+Priority: extra
+Section: admin
+Filename: pool/main/a/apparmor/apparmor-notify_2.10-2_all.deb
+Size: 55596
+SHA256: d0ed3a5ca406555b59ea5e0e0c8703bc48ef59827960b47b9859967af3605960
+SHA1: 3d6b3c167741c52d81b8f211ba1e3fad225afb45
+MD5sum: 0a8a160fab5853f23d0f4cbfa74221b2
+Description: AppArmor notification system
+ This package provides a utility to display AppArmor denial messages via
+ desktop notifications. The utility can also be used to generate summary
+ reports.
+
+Package: apparmor-profiles
+Source: apparmor
+Version: 2.10-2
+Architecture: all
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 314
+Depends: apparmor (>= 2.8.96~2535-0ubuntu1~)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: admin
+Filename: pool/main/a/apparmor/apparmor-profiles_2.10-2_all.deb
+Size: 75094
+SHA256: 08b40c742bb4192aa14ce9c7cf5aa52b7f3081fde1df7248651ef321d9ee33ac
+SHA1: 10dc54a2181cf9ab3f11d95f6569951d1ec8b763
+MD5sum: f4574a0c22617fe1ad2be347633cc5a3
+Description: profiles for AppArmor Security policies
+ This provides various AppArmor profiles that have not been shipped by
+ the packages they provide confinement for. By default, they ship in
+ complain mode so that users can test and choose which are desired.
+
+Package: apparmor-utils
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 255
+Depends: apparmor (>= 2.6.1-4ubuntu1), libapparmor-perl, python3-apparmor (= 2.10-2), python3
+Suggests: apparmor-docs, vim-addon-manager
+Homepage: http://apparmor.net/
+Priority: extra
+Section: admin
+Filename: pool/main/a/apparmor/apparmor-utils_2.10-2_amd64.deb
+Size: 97000
+SHA256: ca6ff5f29de29e55dbfa7a1d82fca1a442cce268adb8a111f962885b56958563
+SHA1: e75aff0d7309cbeeb0b9efd8d01fc84cec4cd0f9
+MD5sum: c0c0cdc9258e3c11cccf8865e91711d9
+Description: utilities for controlling AppArmor
+ This provides the utilities to operate on AppArmor profiles. Profiles
+ can be created, updated, enforced, set to complain mode, and disabled
+ with tools such as aa-genprof, aa-enforce, aa-complain and aa-disabled.
+
+Package: dh-apparmor
+Source: apparmor
+Version: 2.10-2
+Architecture: all
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 100
+Suggests: apparmor-easyprof
+Breaks: debhelper (<< 9.20120115ubuntu3)
+Replaces: debhelper (<< 9.20120115ubuntu3)
+Multi-Arch: foreign
+Homepage: http://apparmor.net/
+Priority: extra
+Section: devel
+Filename: pool/main/a/apparmor/dh-apparmor_2.10-2_all.deb
+Size: 51276
+SHA256: c87c94661b73375cbc4797056b104c84eb704f35b6d3d2b79bfc5991471ef8a3
+SHA1: baf734c2ab2e81bc034aab6c05f7e30f4d0aa390
+MD5sum: 46ae713755547321e51007725dfbfef9
+Description: AppArmor debhelper routines
+ This provides the debhelper tools used to install and migrate AppArmor
+ profiles. This is normally used from package maintainer scripts during
+ install and removal.
+
+Package: libapache2-mod-apparmor
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 146
+Depends: libapparmor1 (>= 2.7.0~beta1+bzr1772), libc6 (>= 2.4), apache2-api-20120211
+Homepage: http://apparmor.net/
+Priority: extra
+Section: libs
+Filename: pool/main/a/apparmor/libapache2-mod-apparmor_2.10-2_amd64.deb
+Size: 59080
+SHA256: 4db7ed58db9201ecb165e6e2d07c4b3a0f0ac9f5358451e3d82a4421a51c1c50
+SHA1: e3b665195f54f06dc03649ac2cdf8f02a285d4ca
+MD5sum: da46785edf4814c445df2380b53147f2
+Description: changehat AppArmor library as an Apache module
+ This provides the Apache module needed to declare various differing
+ confinement policies when running virtual hosts in the webserver
+ by using the changehat abilities exposed through libapparmor.
+
+Package: libapparmor-dev
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 259
+Depends: libapparmor1 (= 2.10-2)
+Breaks: apparmor-docs (<< 2.8.95~2395-0ubuntu1), libapparmor1 (<< 2.8.95~2395-0ubuntu1)
+Replaces: apparmor-docs (<< 2.8.95~2395-0ubuntu1), libapparmor1 (<< 2.8.95~2395-0ubuntu1)
+Multi-Arch: same
+Homepage: http://apparmor.net/
+Priority: extra
+Section: libdevel
+Filename: pool/main/a/apparmor/libapparmor-dev_2.10-2_amd64.deb
+Size: 107020
+SHA256: 2613676c0f6502ad51a812b11d37e159b62f0e1ca390fd5399f2c57ee223fd33
+SHA1: 387327f4ac5c7998daf217a91584f7030b3dc7ef
+MD5sum: ff9427d8a2d92b36a81858a678525abd
+Description: AppArmor development libraries and header files
+ This package provides the development libraries and header files needed to
+ link against the AppArmor changehat and log parsing functions. Also
+ includes the manpages for library functions.
+
+Package: libapparmor-perl
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 245
+Depends: perl-base (>= 5.20.2-3+deb8u1), perlapi-5.20.2, libapparmor1 (>= 2.10), libc6 (>= 2.14)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: perl
+Filename: pool/main/a/apparmor/libapparmor-perl_2.10-2_amd64.deb
+Size: 75414
+SHA256: 21ee26b700355875d9caa7e665b010bc5f501b83b7540960d4bd9fc20b1180e1
+SHA1: 32dafff212fd5fba08f3ffea9e9f39e36384e79a
+MD5sum: 7539d9b30738d93efd350f8280d0aa01
+Description: AppArmor library Perl bindings
+ This provides the Perl module that contains the language bindings
+ for the AppArmor library, libapparmor, which were autogenerated via
+ SWIG.
+
+Package: libapparmor1
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 150
+Depends: libc6 (>= 2.17)
+Multi-Arch: same
+Homepage: http://apparmor.net/
+Priority: extra
+Section: libs
+Filename: pool/main/a/apparmor/libapparmor1_2.10-2_amd64.deb
+Size: 71290
+SHA256: 81a9015365fffa19d1428e39a3799f6554c524157dec8397da6d3ef91e851280
+SHA1: fe5f68e477c35720ec78b7503ecce3d5cb6e7c99
+MD5sum: 14957db34bedf07b19504cc6a28fd7ca
+Description: changehat AppArmor library
+ This package provides the shared library used for making use of the
+ AppArmor profile and changehat functionality, as well as common log
+ parsing routines.
+
+Package: libcap-dev
+Source: libcap2
+Version: 1:2.24-12
+Architecture: amd64
+Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 95
+Depends: libcap2 (= 1:2.24-12)
+Suggests: manpages-dev
+Provides: libcap2-dev
+Multi-Arch: same
+Homepage: http://sites.google.com/site/fullycapable/
+Priority: optional
+Section: libdevel
+Filename: pool/main/libc/libcap2/libcap-dev_2.24-12_amd64.deb
+Size: 28778
+SHA256: a5ed977fa44e5743f3041d81d9f147fc45d3785cff8b76c84e8f5c6af5c477cd
+SHA1: 666a02be2d996c77ee2e2ef727cc06e582b3defe
+MD5sum: d74f323bc9159e1c0b5d59af7281959b
+Description: POSIX 1003.1e capabilities (development)
+ Libcap implements the user-space interfaces to the POSIX 1003.1e capabilities
+ available in Linux kernels. These capabilities are a partitioning of the all
+ powerful root privilege into a set of distinct privileges.
+ .
+ This package contains the development files.
+
+Package: libcap2
+Version: 1:2.24-12
+Architecture: amd64
+Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 48
+Depends: libattr1 (>= 1:2.4.46-8), libc6 (>= 2.14)
+Multi-Arch: same
+Homepage: http://sites.google.com/site/fullycapable/
+Priority: standard
+Section: libs
+Filename: pool/main/libc/libcap2/libcap2_2.24-12_amd64.deb
+Size: 16404
+SHA256: 6c09e53ef53f368eac983fd4b8d4ad218211ee0a6ab73f70328729b61833a028
+SHA1: b048f60c187a97c4026f87b4a7787cbbd9e1d7c1
+MD5sum: 4d2d6c1bbd044b4d1942bdad00bbc761
+Description: POSIX 1003.1e capabilities (library)
+ Libcap implements the user-space interfaces to the POSIX 1003.1e capabilities
+ available in Linux kernels. These capabilities are a partitioning of the all
+ powerful root privilege into a set of distinct privileges.
+ .
+ This package contains the shared library.
+
+Package: libmount-dev
+Source: util-linux
+Version: 2.27-3
+Architecture: amd64
+Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+Installed-Size: 699
+Depends: libc6-dev | libc-dev, libmount1 (= 2.27-3), libblkid-dev
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Filename: pool/main/u/util-linux/libmount-dev_2.27-3_amd64.deb
+Size: 186672
+SHA256: fd4773b7296d0404392aa4a9c2e6680475074dff3a403eb35d21618ad467ce21
+SHA1: 5c0c4929fbd847903232ba1fa3d7cf6dd4ce4229
+MD5sum: 2fccc3071daf7b64ba91a62dbea7943a
+Description: device mounting library - headers and static libraries
+ The device mounting library, used by mount and umount helpers.
+ .
+ This package contains the development environment for the mount library.
+
+Package: libmount1
+Source: util-linux
+Version: 2.27-3
+Architecture: amd64
+Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+Installed-Size: 382
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.17), libselinux1 (>= 1.32)
+Multi-Arch: same
+Priority: required
+Section: libs
+Filename: pool/main/u/util-linux/libmount1_2.27-3_amd64.deb
+Size: 170142
+SHA256: 3f9c8b8bb75311f0bab87c40fcccfa3a59a3ae455ff6d81a2f1d92d98158f77d
+SHA1: bd75297eabeaec6a570ce2287c069ba2c7ac053d
+MD5sum: 9ec6d8aebb168b8e45f6cd4169a9b115
+Description: device mounting library
+ The device mounting library, used by mount and umount helpers.
+
+Package: libnss-myhostname
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 163
+Pre-Depends: multiarch-support
+Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.14), libcap2 (>= 1:2.10), libgcrypt20 (>= 1.6.0), liblzma5 (>= 5.1.1alpha+20110809), libseccomp2 (>= 0.0.0~20120605), libselinux1 (>= 1.32)
+Breaks: systemd (<< 222-1)
+Replaces: systemd (<< 222-1)
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: extra
+Section: admin
+Filename: pool/main/s/systemd/libnss-myhostname_225-1ubuntu9+jessie1_amd64.deb
+Size: 73950
+SHA256: 2d0760f5d666a043896b124fbbe1b5b4777765833774e9b6d7b59a1f72ccf9ef
+SHA1: ab18ccaff6390f44c5bfa95003d8712d55c04f72
+MD5sum: df17bd352b2929f01a0bb5a01ee79ff3
+Description: nss module providing fallback resolution for the current hostname
+ This package contains a plugin for the Name Service Switch, providing host
+ name resolution for the locally configured system hostname as returned by
+ gethostname(2). It returns all locally configured public IP addresses or -- if
+ none are configured, the IPv4 address 127.0.1.1 (which is on the local
+ loopback) and the IPv6 address ::1 (which is the local host).
+ .
+ A lot of software relies on that the local host name is resolvable. This
+ package provides an alternative to the fragile and error-prone manual editing
+ of /etc/hosts.
+ .
+ Installing this package automatically adds myhostname to /etc/nsswitch.conf.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libnss-mymachines
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 348
+Pre-Depends: multiarch-support
+Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.17), libcap2 (>= 1:2.10), libgcrypt20 (>= 1.6.0), liblzma5 (>= 5.1.1alpha+20110809), libseccomp2 (>= 0.0.0~20120605), libselinux1 (>= 1.32)
+Breaks: systemd (<< 222-1)
+Replaces: systemd (<< 222-1)
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: extra
+Section: admin
+Filename: pool/main/s/systemd/libnss-mymachines_225-1ubuntu9+jessie1_amd64.deb
+Size: 155832
+SHA256: 184cf429e4246cf69022b8e88e7aa74d1a0691446d94eb22c3f9e1d8e7cf8f48
+SHA1: afb76f39436e3180a398847ec4b18b904752b54a
+MD5sum: 51a33955940bafe82c775ee6e548e3af
+Description: nss module to resolve hostnames for local container instances
+ nss-mymachines is a plugin for the GNU Name Service Switch (NSS) functionality
+ of the GNU C Library (glibc) providing hostname resolution for local containers
+ that are registered with systemd-machined.service(8). The container names are
+ resolved to IP addresses of the specific container, ordered by their scope.
+ .
+ Installing this package automatically adds mymachines to /etc/nsswitch.conf.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libpam-apparmor
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 94
+Depends: libapparmor1 (>= 2.6~devel), libc6 (>= 2.4), libpam0g (>= 0.99.7.1)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: libs
+Filename: pool/main/a/apparmor/libpam-apparmor_2.10-2_amd64.deb
+Size: 51042
+SHA256: 8faef101086c5467e07c83b176c8ce73577f677821740ebba28062bee82de5ed
+SHA1: 4e6a468118e7f1249988681fc5752a2f5c3ae2e5
+MD5sum: edc1b28af3d7475dc2ff9ed95fe3a144
+Description: changehat AppArmor library as a PAM module
+ This provides the PAM module needed to declare various differing
+ confinement policies when starting PAM sessions by using the
+ changehat abilities exposed through libapparmor.
+
+Package: libpam-systemd
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 362
+Pre-Depends: multiarch-support
+Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.17), libcap2 (>= 1:2.10), libgcrypt20 (>= 1.6.0), liblzma5 (>= 5.1.1alpha+20110809), libpam0g (>= 0.99.7.1), libseccomp2 (>= 0.0.0~20120605), libselinux1 (>= 1.32), systemd (= 225-1ubuntu9+jessie1), libpam-runtime (>= 1.0.1-6), dbus, systemd-shim (>= 8-2) | systemd-sysv
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: optional
+Section: admin
+Filename: pool/main/s/systemd/libpam-systemd_225-1ubuntu9+jessie1_amd64.deb
+Size: 159282
+SHA256: 23f161bb1eebb5422e4cb34c6795360e0a61001245cbd80e62c26844ca0ac6fa
+SHA1: 8f4510013f94c73325f3650fa04e4c8645a98acf
+MD5sum: 720e4a53eb7827b6c392ff612bd77e7a
+Description: system and service manager - PAM module
+ This package contains the PAM module which registers user sessions in
+ the systemd control group hierarchy for logind.
+ .
+ If in doubt, do install this package.
+ .
+ Packages that depend on logind functionality need to depend on libpam-systemd.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libseccomp-dev
+Source: libseccomp
+Version: 2.2.3-2
+Architecture: amd64
+Maintainer: Kees Cook <kees@debian.org>
+Installed-Size: 344
+Depends: libseccomp2 (= 2.2.3-2)
+Suggests: seccomp
+Multi-Arch: same
+Homepage: https://github.com/seccomp/libseccomp
+Priority: optional
+Section: libdevel
+Filename: pool/main/libs/libseccomp/libseccomp-dev_2.2.3-2_amd64.deb
+Size: 52980
+SHA256: 8adcf5c897ad8d4a31edbedf7c314c10bff85ff703abc938d23fd12493e5e2e8
+SHA1: b3bf59822ff943b730c94dacef7831de7fac8e49
+MD5sum: 33579fcb630c2d0b0d3681447317fb07
+Description: high level interface to Linux seccomp filter (development files)
+ This library provides a high level interface to constructing, analyzing
+ and installing seccomp filters via a BPF passed to the Linux Kernel's
+ prctl() syscall.
+ .
+ This package contains the development files.
+
+Package: libseccomp2
+Source: libseccomp
+Version: 2.2.3-2
+Architecture: amd64
+Maintainer: Kees Cook <kees@debian.org>
+Installed-Size: 194
+Depends: libc6 (>= 2.4)
+Multi-Arch: same
+Homepage: https://github.com/seccomp/libseccomp
+Priority: optional
+Section: libs
+Filename: pool/main/libs/libseccomp/libseccomp2_2.2.3-2_amd64.deb
+Size: 33706
+SHA256: 13c84099a766e1b8f2f7286d7a10f37b433a199bf7a316c2118ba3db9ee7dd0d
+SHA1: ed3e7d3e2bfc45a9e6d8427e33c716f06a0d5ebb
+MD5sum: f10f5ef46eb41323ae9bc3228c76d2b5
+Description: high level interface to Linux seccomp filter
+ This library provides a high level interface to constructing, analyzing
+ and installing seccomp filters via a BPF passed to the Linux Kernel's
+ prctl() syscall.
+
+Package: libsmartcols1
+Source: util-linux
+Version: 2.27-3
+Architecture: amd64
+Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+Installed-Size: 229
+Depends: libc6 (>= 2.17)
+Multi-Arch: same
+Priority: required
+Section: libs
+Filename: pool/main/u/util-linux/libsmartcols1_2.27-3_amd64.deb
+Size: 115182
+SHA256: a6d0b8656c4d3bdd8c649c9b133e8bbd53c35bfb5526c6a640be061d08e464fc
+SHA1: 16409d6d9f1e19161bbbd788513c90550ed179df
+MD5sum: 97a9a07287059ebacab4fd91125b35d0
+Description: smart column output alignment library
+ The smart column output alignment library, used by fdisk utilities.
+
+Package: libsystemd-daemon-dev
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 90
+Depends: libsystemd-dev (>= 225-1ubuntu9+jessie1)
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: extra
+Section: oldlibs
+Filename: pool/main/s/systemd/libsystemd-daemon-dev_225-1ubuntu9+jessie1_amd64.deb
+Size: 50960
+SHA256: 8e338c7998a7429f82e083a2b73f3c700b63914db0526bb286b758709ff4aa82
+SHA1: 6f9e95acff7268d2136b4ac0d2ff8cff04a90576
+MD5sum: 305a4fe63849d4748010b49581384fbb
+Description: systemd utility library (transitional package)
+ The sd-daemon library provides a reference implementation of various
+ APIs for new-style daemons, as implemented by the systemd init system.
+ .
+ This is a compatibility package which provides a .pc file for the old library
+ name. That way, packages can be rebuilt against the new libsystemd library
+ without requiring changes to existing configure scripts.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libsystemd-dev
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 307
+Depends: libsystemd0 (= 225-1ubuntu9+jessie1)
+Breaks: libsystemd-daemon-dev (<< 209), libsystemd-id128-dev (<< 209), libsystemd-journal-dev (<< 209), libsystemd-login-dev (<< 209), systemd (<< 204-8)
+Replaces: libsystemd-daemon-dev (<< 209), libsystemd-id128-dev (<< 209), libsystemd-journal-dev (<< 209), libsystemd-login-dev (<< 209), systemd (<< 204-8)
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/systemd/libsystemd-dev_225-1ubuntu9+jessie1_amd64.deb
+Size: 174476
+SHA256: db305df9ca40be28702d5147815ce2ab7d4f6db865e0b9f1563f4e1fdddd96dd
+SHA1: 149985d451bb2a04e053a44850dec0975fc1a23f
+MD5sum: 6119319c20b85b0eed74f829e060fc96
+Description: systemd utility library - development files
+ The libsystemd0 library provides interfaces to various systemd components.
+ .
+ This package contains the development files.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libsystemd-login-dev
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 90
+Depends: libsystemd-dev (>= 225-1ubuntu9+jessie1)
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: extra
+Section: oldlibs
+Filename: pool/main/s/systemd/libsystemd-login-dev_225-1ubuntu9+jessie1_amd64.deb
+Size: 50980
+SHA256: 6152188f1d8da6fb27cb4c3117dcf559f9e2fbe351f12a2f05965c82eb848fe6
+SHA1: 5c006f0df2bc05ac162eb3a446ecbae5edf88667
+MD5sum: 4a6b43343b628935ccc9b9fde50c8c39
+Description: systemd login utility library (transitional package)
+ The libsystemd-login library provides an interface for the
+ systemd-logind service which is used to track user sessions and seats.
+ .
+ This is a compatibility package which provides a .pc file for the old library
+ name. That way, packages can be rebuilt against the new libsystemd library
+ without requiring changes to existing configure scripts.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libsystemd0
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 611
+Pre-Depends: libc6 (>= 2.17), libcap2 (>= 1:2.10), libgcrypt20 (>= 1.6.1), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 1.32), multiarch-support
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: optional
+Section: libs
+Filename: pool/main/s/systemd/libsystemd0_225-1ubuntu9+jessie1_amd64.deb
+Size: 242896
+SHA256: 06ff2f0f82b0a12d8f4838c9b281d7336cf8aab263cc16330ddc79189545d8eb
+SHA1: a2143c0f697876e423d4217dc8449d217c1708fd
+MD5sum: 986c10781a4a233b49f9ce86ac31a430
+Description: systemd utility library
+ The libsystemd0 library provides interfaces to various systemd components.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libudev-dev
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 125
+Pre-Depends: dpkg (>= 1.17.14)
+Depends: libudev1 (= 225-1ubuntu9+jessie1)
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: optional
+Section: libdevel
+Filename: pool/main/s/systemd/libudev-dev_225-1ubuntu9+jessie1_amd64.deb
+Size: 65944
+SHA256: af98030c0b27fe87c22bbfb584c2334bee35e6c42140856a1d658f13dd521e58
+SHA1: a7c6093b20ced5caa11b2a442f257914bc09a72f
+MD5sum: d2143c2b65b24bc536cda8abcf07b357
+Description: libudev development files
+ This package contains the files needed for developing applications that
+ use libudev.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: libudev1
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 210
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.16), libcap2 (>= 1:2.10), libselinux1 (>= 1.32)
+Multi-Arch: same
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: important
+Section: libs
+Filename: pool/main/s/systemd/libudev1_225-1ubuntu9+jessie1_amd64.deb
+Size: 97510
+SHA256: 66f1eef9017ae39ba17bfaf4167dda6ea51a32af185cf127d93b7b96847db7e9
+SHA1: 8c9dc4cee57f59417dafbac73bc30d4c33978d56
+MD5sum: e3752f0b80a82c6ac48d6b0f1e6937ec
+Description: libudev shared library
+ This library provides access to udev device information.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: mount
+Source: util-linux
+Version: 2.27-3
+Architecture: amd64
+Essential: yes
+Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+Installed-Size: 403
+Pre-Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.17), libmount1 (>= 2.25), libselinux1 (>= 2.0.15), libsmartcols1 (>= 2.27~rc1), libudev1 (>= 183)
+Suggests: nfs-common (>= 1:1.1.0-13)
+Multi-Arch: foreign
+Priority: required
+Section: admin
+Filename: pool/main/u/util-linux/mount_2.27-3_amd64.deb
+Size: 175234
+SHA256: a3194f9b3e77710f650ee61d3c64d1fa11787d135c8f9e66e9b5e1067c33304c
+SHA1: 64c82ff9fb190f0cd1c050b009ba4f0293d07dd5
+MD5sum: 609b65af9d9ac85beca23a3f79217526
+Description: Tools for mounting and manipulating filesystems
+ This package provides the mount(8), umount(8), swapon(8),
+ swapoff(8), and losetup(8) commands.
+
+Package: python-apparmor
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 490
+Depends: python (>= 2.7), python (<< 2.8), python-libapparmor (>= 2.10), python-pkg-resources
+Breaks: apparmor-utils (<< 2.8.95~2385-0ubuntu1)
+Replaces: apparmor-utils (<< 2.8.95~2385-0ubuntu1)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: python
+Filename: pool/main/a/apparmor/python-apparmor_2.10-2_amd64.deb
+Size: 114774
+SHA256: 68c3df78a04ea094cd7f7475d926b355b90ccc63968cba9b245465b1edc9b1cd
+SHA1: f70ce15da6828599ca29a2859f4a8b34e358362d
+MD5sum: f3f0f4082e992a2adea30f27c9f21632
+Description: AppArmor Python utility library
+ This provides the Python modules that implement the higher-level AppArmor
+ applications.
+
+Package: python-libapparmor
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 215
+Depends: python (>= 2.7), python (<< 2.8), libapparmor1 (>= 2.10), libc6 (>= 2.14)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: python
+Filename: pool/main/a/apparmor/python-libapparmor_2.10-2_amd64.deb
+Size: 70510
+SHA256: a10e81e02496d56f5dd20e5cd6b8a558a403b191cf573347a416bb6bdef198ad
+SHA1: 62f772ae17edf15b97afffb68eafcef84a37edc2
+MD5sum: 3da318a86921688d1dfc986c37a811a2
+Description: AppArmor library Python bindings
+ This provides the Python module that contains the language bindings
+ for the AppArmor library, libapparmor, which were autogenerated via
+ SWIG.
+
+Package: python3-apparmor
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 490
+Depends: python3:any (>= 3.3.2-2~), python3-libapparmor (>= 2.10), python3-pkg-resources
+Breaks: apparmor-easyprof (<< 2.8.95~2385-0ubuntu1), apparmor-utils (<< 2.8.95~2385-0ubuntu1)
+Replaces: apparmor-easyprof (<< 2.8.95~2385-0ubuntu1), apparmor-utils (<< 2.8.95~2385-0ubuntu1)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: python
+Filename: pool/main/a/apparmor/python3-apparmor_2.10-2_amd64.deb
+Size: 114842
+SHA256: 064e4a50b8ecd9b61a3a4a886123996569db4acd31f3fffae0ac5c6decf1b345
+SHA1: d1cebdff4670440292110a6fd79e56a67b30129c
+MD5sum: e1e355f391db79118ec1a1960ee7916a
+Description: AppArmor Python3 utility library
+ This provides the Python3 modules that implement the higher-level AppArmor
+ applications.
+
+Package: python3-libapparmor
+Source: apparmor
+Version: 2.10-2
+Architecture: amd64
+Maintainer: Debian AppArmor Team <pkg-apparmor-team@lists.alioth.debian.org>
+Installed-Size: 207
+Depends: python3 (<< 3.5), python3 (>= 3.4~), libapparmor1 (>= 2.10), libc6 (>= 2.14)
+Homepage: http://apparmor.net/
+Priority: extra
+Section: python
+Filename: pool/main/a/apparmor/python3-libapparmor_2.10-2_amd64.deb
+Size: 70214
+SHA256: b3ab0169bda3e6444bdb2b231473cad9419274ccc78984992c0e8faf5ddbd667
+SHA1: fdf9b5a4b5bbcc073f89bd0feb3fce503369f67b
+MD5sum: 7a9ff018917f4cb868a661fcfd6696ed
+Description: AppArmor library Python3 bindings
+ This provides the Python3 module that contains the language bindings
+ for the AppArmor library, libapparmor, which were autogenerated via
+ SWIG.
+
+Package: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 16762
+Pre-Depends: libc6 (>= 2.17), libgcrypt20 (>= 1.6.1), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 1.32)
+Depends: libacl1 (>= 2.2.51-8), libapparmor1 (>= 2.9.0-3+exp2), libaudit1 (>= 1:2.2.1), libblkid1 (>= 2.19.1), libcap2 (>= 1:2.10), libcryptsetup4 (>= 2:1.4.3), libkmod2 (>= 5~), libmount1 (>= 2.20.1), libpam0g (>= 0.99.7.1), libseccomp2 (>= 2.1.0), libselinux1 (>= 2.1.9), libsystemd0 (= 225-1ubuntu9+jessie1), util-linux, mount (>= 2.26), sysv-rc, udev, adduser, libcap2-bin
+Recommends: libpam-systemd, dbus
+Suggests: systemd-ui, systemd-container
+Conflicts: klogd, systemd-services
+Breaks: apparmor (<< 2.9.2-1), lsb-base (<< 4.1+Debian4), lvm2 (<< 2.02.104-1), systemd-shim (<< 8-2)
+Replaces: systemd-services
+Provides: systemd-services
+Multi-Arch: foreign
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: important
+Section: admin
+Filename: pool/main/s/systemd/systemd_225-1ubuntu9+jessie1_amd64.deb
+Size: 3387426
+SHA256: a16f8f2118207af2f2ef753750f6d92b01ebbc3a8737a8a2d69f040fa0731982
+SHA1: e721c86bc1808b2380d781ad96f1b1cc75be7e1c
+MD5sum: 6cc9cda16879b49a4049321e6a5470f2
+Description: system and service manager
+ systemd is a system and service manager for Linux. It provides aggressive
+ parallelization capabilities, uses socket and D-Bus activation for starting
+ services, offers on-demand starting of daemons, keeps track of processes
+ using Linux control groups, supports snapshotting and restoring of the system
+ state, maintains mount and automount points and implements an elaborate
+ transactional dependency-based service control logic.
+ .
+ systemd is compatible with SysV and LSB init scripts and can work as a
+ drop-in replacement for sysvinit.
+ .
+ Installing the systemd package will not switch your init system unless you
+ boot with init=/bin/systemd or install systemd-sysv in addition.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: systemd-container
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 2440
+Depends: libblkid1 (>= 2.19.1), libbz2-1.0, libc6 (>= 2.17), libcap2 (>= 1:2.10), libcurl3-gnutls (>= 7.16.3), libgcrypt20 (>= 1.6.1), liblzma5 (>= 5.1.1alpha+20120614), libseccomp2 (>= 1.0.1), libselinux1 (>= 1.32), zlib1g (>= 1:1.1.4), systemd
+Conflicts: systemd (<< 224-2)
+Replaces: systemd (<< 224-2)
+Multi-Arch: foreign
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: optional
+Section: admin
+Filename: pool/main/s/systemd/systemd-container_225-1ubuntu9+jessie1_amd64.deb
+Size: 662542
+SHA256: 90bf17e79486b027ca9757459081de03618edf1f21446079f8919267f4a7025a
+SHA1: a58ad9b7e9cfd6afb0d6bf15f76f1b93d0a87e3a
+MD5sum: 90badd3156934d4c57f7bcee02ee7cbd
+Description: systemd container/nspawn tools
+ This package provides systemd's tools for nspawn and container/VM management:
+  * systemd-nspawn
+  * systemd-machined and machinectl
+  * systemd-importd
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: systemd-dbg
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 29895
+Depends: systemd (= 225-1ubuntu9+jessie1), udev (= 225-1ubuntu9+jessie1), libsystemd0 (= 225-1ubuntu9+jessie1), libudev1 (= 225-1ubuntu9+jessie1)
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: extra
+Section: debug
+Filename: pool/main/s/systemd/systemd-dbg_225-1ubuntu9+jessie1_amd64.deb
+Size: 25001396
+SHA256: cfcdbac466ef2543401b1e40b92e3699ee5f8b9fad25ebcad17e6674e143d738
+SHA1: 1b42b6d16ab89a54ba5cd79f980c38c476fce922
+MD5sum: 68119c3eaea900d06a6ff95a73953b0e
+Description: system and service manager (debug symbols)
+ This package contains the debugging symbols for systemd, udev and
+ related libraries.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: systemd-sysv
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 98
+Pre-Depends: systemd
+Conflicts: sysvinit-core, upstart (<< 1.13.2-0ubuntu10~), upstart-sysv
+Replaces: sysvinit (<< 2.88dsf-44~), sysvinit-core, upstart (<< 1.13.2-0ubuntu10~), upstart-sysv
+Multi-Arch: foreign
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: important
+Section: admin
+Filename: pool/main/s/systemd/systemd-sysv_225-1ubuntu9+jessie1_amd64.deb
+Size: 55602
+SHA256: c73125afdc0ebe8538d2e12cdd0394457ba18a81b651b8275bddc293272f5722
+SHA1: c5db79358b6867239dea9504fb7e2423bbf71c71
+MD5sum: d56c356c0f50b5eddf50224670041d70
+Description: system and service manager - SysV links
+ systemd is a system and service manager for Linux. It provides aggressive
+ parallelization capabilities, uses socket and D-Bus activation for starting
+ services, offers on-demand starting of daemons, keeps track of processes
+ using Linux control groups, supports snapshotting and restoring of the system
+ state, maintains mount and automount points and implements an elaborate
+ transactional dependency-based service control logic.
+ .
+ systemd is compatible with SysV and LSB init scripts and can work as a
+ drop-in replacement for sysvinit.
+ .
+ This package provides the manual pages and links needed for systemd
+ to replace sysvinit. Installing systemd-sysv will overwrite /sbin/init with a
+ link to systemd.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+
+Package: udev
+Source: systemd
+Version: 225-1ubuntu9+jessie1
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 6593
+Pre-Depends: debconf (>= 1.4.69) | debconf-2.0, dpkg (>= 1.17.14)
+Depends: libacl1 (>= 2.2.51-8), libblkid1 (>= 2.19.1), libc6 (>= 2.17), libkmod2 (>= 5~), libselinux1 (>= 2.0.65), adduser, libudev1 (= 225-1ubuntu9+jessie1), lsb-base (>= 3.0-6), util-linux (>= 2.25), procps
+Breaks: bash-completion (<< 1:2.1), consolekit (<< 0.4.6-1), kmod (<< 14), plymouth (<< 0.9.0-0ubuntu8~), systemd (<< 224-2)
+Replaces: bash-completion (<< 1:2.1), systemd (<< 224-2)
+Multi-Arch: foreign
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Priority: important
+Section: admin
+Filename: pool/main/s/systemd/udev_225-1ubuntu9+jessie1_amd64.deb
+Size: 1016652
+SHA256: ed79a2f4dd4f165d8073a994fb75aac27cf47b70f12816de8e442fea4e98f8ec
+SHA1: 859ae57893ddded727c9304593525dd9988c684c
+MD5sum: 30e670a419ab968f21a1ce5f47432afb
+Description: /dev/ and hotplug management daemon
+ udev is a daemon which dynamically creates and removes device nodes from
+ /dev/, handles hotplug events and loads drivers at boot time.
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+

@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Origin: debian-lxc.github.io
+Label: debian-lxc.github.io
+Suite: stable
+Codename: jessie
+Date: Tue, 20 Oct 2015 00:23:17 UTC
+Architectures: amd64
+Components: main
+Description: debian-lxc.github.io repo
+MD5Sum:
+ f9a6f0e9bc30bd948e030d2328dc3e41 36544 main/binary-amd64/Packages
+ e970f8ec526fa1e01ccce7d7a6861e8c 9634 main/binary-amd64/Packages.gz
+ ef5d8d1f42758a903611de25cc8f7068 148 main/binary-amd64/Release
+ fa116f44cbc98475ee05e8c118bdfe7f 6151 main/source/Sources
+ dd44122f32942af0c95cf3c44d0ee1d0 2212 main/source/Sources.gz
+ a16b1dd6b0796f6ce3e07aef3f4c0a70 149 main/source/Release
+SHA1:
+ 14d8e5009a3febf159086a6da2982e0f61ae6679 36544 main/binary-amd64/Packages
+ 5de0c27c7a9a9900158db21f593024020f63648a 9634 main/binary-amd64/Packages.gz
+ 254ad80973e64ab033566b62cb4924b81bd1cc55 148 main/binary-amd64/Release
+ 4b284a9011f0a3ea1162c1ad992396560499da09 6151 main/source/Sources
+ 417382562e7cb78d93624da01eeb1b03e6bf2938 2212 main/source/Sources.gz
+ 78721083de1bf576e1a2522e38cc1f70c7dc4fd9 149 main/source/Release
+SHA256:
+ 845c362d499721eea3995859aceac3c23d77950b7e68ca49800f8bea59ce4837 36544 main/binary-amd64/Packages
+ efc5b3a854478812e89582aec2af21246b9ebbec28097b17622396ff8133477d 9634 main/binary-amd64/Packages.gz
+ a3b6999590d04be44c3b53afb3247f71ed0a0199521e62d02f4157e83dc09dee 148 main/binary-amd64/Release
+ c4dfca43e78556354c29c58914502e782f9aff7a8aeacb316d243c626e158735 6151 main/source/Sources
+ 6ef36ce56e32ab059e6856aabcfb98649a512c5d86ce2fd15c3a5302381f77ab 2212 main/source/Sources.gz
+ 1af63d830664d79fb922eb6b80478160529a725df8ce85480f9520ea12584a29 149 main/source/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWJYl3AAoJEGfdgbPG53CT5SkH/2n6ydPf6xcXfR9qFkFGv5py
+9S3aBivOrsdSr881C0z9ZUSKr7aqEjd4NTC3gbG3JcPPPraRmCVbIve3PWppjvDi
+xBopo3+bMUJUJu/o49HMviazQRtqtGC6lGdN9BGjGAd3HA9tWz8xQyVLhc7SI4H/
+hxiSm16vxYaCiYOuy7vK0HPlewv+4orAO67C4Lqapqf7i3Z2KQjDNZEUDkC6rQHB
+/gobsCQzS6wbLLK30f9VUdLURlUbe03wQ35ltR5O1KCCvbOHyZjpGPW8IYCUqTCr
+VQGz+jDGGs/5CDmvpVQuSXQGgj63w8yObbsuud6NcHZ55pK0YOgKwYZYP+Ga6xg=
+=/Xqq
+-----END PGP SIGNATURE-----

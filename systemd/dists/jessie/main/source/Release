@@ -1,0 +1,6 @@
+Archive: stable
+Component: main
+Origin: debian-lxc.github.io
+Label: debian-lxc.github.io
+Architecture: source
+Description: debian-lxc.github.io repo

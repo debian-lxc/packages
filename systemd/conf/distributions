@@ -1,0 +1,10 @@
+Origin: debian-lxc.github.io
+Label: debian-lxc.github.io
+Suite: stable
+Codename: jessie
+Architectures: amd64 source
+Components: main
+Description: debian-lxc.github.io repo
+SignWith: ubuntu-ppa@fajar.net
+Pull: jessie
+
