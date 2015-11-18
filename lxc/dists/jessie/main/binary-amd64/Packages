@@ -94,10 +94,10 @@ Description: Central cgroup manager daemon (client library)
 
 Package: liblxc1
 Source: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 609
+Installed-Size: 578
 Pre-Depends: multiarch-support
 Depends: cgmanager | cgroup-lite, rsync, libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libcap2 (>= 1:2.10), libcgmanager0 (>= 0.32), libdbus-1-3 (>= 1.0.2), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), libseccomp2 (>= 1.0.1), libselinux1 (>= 1.32)
 Recommends: cgmanager, uidmap
@@ -108,11 +108,11 @@ Provides: liblxc0
 Homepage: https://linuxcontainers.org
 Priority: optional
 Section: admin
-Filename: pool/main/l/lxc/liblxc1_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 224820
-SHA256: 7fa57c512971e550e2be0e29dda7abbd15e935edee5e18e85494b04c01d82808
-SHA1: 5eb0d6447b92a26829f94d8dfa19655d53a5063a
-MD5sum: a850fff72da3281be62a10ec783cb47d
+Filename: pool/main/l/lxc/liblxc1_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 227186
+SHA256: c21fb60b67d53d80df995f8b5cb6a0f4de880fc8f0450e8f5bc586d8e5ce7a80
+SHA1: 0896e3c1983ab9771522e5cad91e93a5891194f1
+MD5sum: a7cf1a053037e3b07dd2f3d028ef68e5
 Description: Linux Containers userspace tools (library)
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
@@ -148,20 +148,20 @@ Description: Central cgroup manager daemon (PAM module)
 
 Package: lua-lxc
 Source: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 124
-Depends: liblua5.2-0, liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), lua-filesystem, lua5.2, libapparmor1 (>= 2.6~devel), libc6 (>= 2.14)
+Installed-Size: 73
+Depends: liblua5.2-0, liblxc1 (= 1:1.1.5-0ubuntu2+debian1~jessie), lua-filesystem, lua5.2, libapparmor1 (>= 2.6~devel), libc6 (>= 2.14)
 Recommends: lxc-templates (>= 0.8.0~rc1-4ubuntu43)
 Homepage: https://linuxcontainers.org
 Priority: optional
 Section: interpreters
-Filename: pool/main/l/lxc/lua-lxc_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 50418
-SHA256: c4ce4e43d4f3fdba90e1c784674a0f8bff38ac2150f0256b75fb8b56c0b99522
-SHA1: 640c409046daba098e53428b3fcb5e5eab42091c
-MD5sum: aee70bd0044cda11079b14654716805f
+Filename: pool/main/l/lxc/lua-lxc_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 51030
+SHA256: cd0d97daa76abfe5b806cc094f789869ccee3cfbfa8b662a16321fc66348f5a0
+SHA1: 86d86c6ba1f29ac9b574462c445e1bafffab2b41
+MD5sum: 407d4f3c7b48c9c784b08d63a81c0d7b
 Description: Linux Containers userspace tools (LUA bindings)
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
@@ -171,21 +171,21 @@ Description: Linux Containers userspace tools (LUA bindings)
  This package contains the LUA bindings.
 
 Package: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 3672
-Depends: adduser, bridge-utils, dnsmasq-base, iptables, liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), python3, python3-lxc, apparmor, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.14), libcap2 (>= 1:2.10), libseccomp2 (>= 0.0.0~20120605), libselinux1 (>= 1.32)
+Installed-Size: 3479
+Depends: adduser, bridge-utils, dnsmasq-base, iptables, liblxc1 (= 1:1.1.5-0ubuntu2+debian1~jessie), python3, python3-lxc, apparmor, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.14), libcap2 (>= 1:2.10), libseccomp2 (>= 0.0.0~20120605), libselinux1 (>= 1.32)
 Recommends: lxc-templates (>= 0.8.0~rc1-4ubuntu43)
 Suggests: btrfs-tools, lvm2, lxctl
 Homepage: https://linuxcontainers.org
 Priority: optional
 Section: admin
-Filename: pool/main/l/lxc/lxc_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 532658
-SHA256: 47223aaf6a109d7c1a7209a7e7e4dbc283ad319523ac83247917efc4dc540a2d
-SHA1: 8e7b163084be4f706f4509238d2177a407cbe66c
-MD5sum: 14fd75d0ed844d6b6bc9e3c63bebb9a1
+Filename: pool/main/l/lxc/lxc_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 532810
+SHA256: 3b5fb331ffe2fffe73678a12432b0ae07090ad3cb10963a07a50dc34af4a3f75
+SHA1: 9c303f48711ca7278f6b5b5cbe46c51185367468
+MD5sum: ea8f1531260600abcaa483ee392b8638
 Description: Linux Containers userspace tools
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
@@ -198,19 +198,19 @@ Description: Linux Containers userspace tools
 
 Package: lxc-dbg
 Source: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 1613
-Depends: lxc (= 1:1.1.4-0ubuntu1+debian1~jessie), lxc-dev (= 1:1.1.4-0ubuntu1+debian1~jessie)
+Installed-Size: 1403
+Depends: lxc (= 1:1.1.5-0ubuntu2+debian1~jessie), lxc-dev (= 1:1.1.5-0ubuntu2+debian1~jessie)
 Homepage: https://linuxcontainers.org
 Priority: extra
 Section: debug
-Filename: pool/main/l/lxc/lxc-dbg_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 997286
-SHA256: 0f4744e229294daf7e3b6c6aa0bc25b7e11dec5bde6b96dad5dc22f8c114c29c
-SHA1: 6fba6a91686bc16f6c109ad4e69cb032ea8d8747
-MD5sum: b3299cb6e197cd8a8f73cfbadfe2509a
+Filename: pool/main/l/lxc/lxc-dbg_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 1002656
+SHA256: 4fdbebf9cccc8b2233a812f9e7f21c914e97e69e1c9b79027b0e8347c362878d
+SHA1: 586a8a3c7df77c8349663054cf2b42a13748f3f1
+MD5sum: 847bf43d4f42ffcd7d95d9653e92083c
 Description: Linux Containers userspace tools (debug)
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
@@ -221,19 +221,19 @@ Description: Linux Containers userspace tools (debug)
 
 Package: lxc-dev
 Source: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 123
-Depends: lxc (= 1:1.1.4-0ubuntu1+debian1~jessie)
+Installed-Size: 80
+Depends: lxc (= 1:1.1.5-0ubuntu2+debian1~jessie)
 Homepage: https://linuxcontainers.org
 Priority: optional
 Section: libdevel
-Filename: pool/main/l/lxc/lxc-dev_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 51060
-SHA256: bbd8dc575205ebb7b4b3c8db1c8afa28b720f81c78e2e6abc9b307496cd4630f
-SHA1: 953b7f70e11d1651c00034ae045edff59c20a343
-MD5sum: 84b936091352bfddc699380d384e0d3c
+Filename: pool/main/l/lxc/lxc-dev_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 51638
+SHA256: a5bfa7b606e0ed4d628a754221a5a740397639b3b783a149720fc00384b4050e
+SHA1: 87c37b4aa08454ed3872db4369b1d504d2f9a74a
+MD5sum: a4a9324ba7eb2c445400cf29e44bda66
 Description: Linux Containers userspace tools (development)
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
@@ -244,10 +244,10 @@ Description: Linux Containers userspace tools (development)
 
 Package: lxc-templates
 Source: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 391
+Installed-Size: 359
 Depends: lxc (>= 0.8.0~rc1-4ubuntu43)
 Recommends: busybox-static, cloud-image-utils | cloud-utils, debootstrap | cdebootstrap, lxcfs, openssl, rsync, uuid-runtime, xz-utils
 Suggests: qemu-user-static
@@ -256,11 +256,11 @@ Replaces: lxc (<< 0.8.0~rc1-4ubuntu43)
 Homepage: https://linuxcontainers.org
 Priority: optional
 Section: admin
-Filename: pool/main/l/lxc/lxc-templates_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 104552
-SHA256: 3a76c1c22973edfc493607a3282b3336c2efa79126239184ce314853ef3d0ce2
-SHA1: 82660f20855853ac624fbbc7987d811d36e16d18
-MD5sum: a9c25965471d8e2aa57ede70d00f1153
+Filename: pool/main/l/lxc/lxc-templates_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 104966
+SHA256: cac5ccce88733862c44e180b02670ac70946bfd4c8d38dea5c6d9cc38a33c678
+SHA1: ac8f7dd5e1683d9c32270bbcae8823fe5faf025a
+MD5sum: 318b0721c880990a234e336875d340e5
 Description: Linux Containers userspace tools (templates)
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
@@ -271,27 +271,29 @@ Description: Linux Containers userspace tools (templates)
 
 Package: lxc-tests
 Source: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 327
-Depends: liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), libapparmor1 (>= 2.6~devel), libc6 (>= 2.7)
+Installed-Size: 292
+Depends: liblxc1 (= 1:1.1.5-0ubuntu2+debian1~jessie), libapparmor1 (>= 2.6~devel), libc6 (>= 2.7)
 Recommends: lxc, lxc-templates
 Homepage: https://linuxcontainers.org
 Priority: optional
 Section: admin
-Filename: pool/main/l/lxc/lxc-tests_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 78832
-SHA256: d1809c6f017b2d0fda51b0ba27b54128366bf19bb21326eef4aa8636e1f5bb10
-SHA1: cbbc69c238d52932331116b8c355e95d46ba016d
-MD5sum: cf7b98e604d0bbf9872adb74e159c77b
+Filename: pool/main/l/lxc/lxc-tests_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 79336
+SHA256: 9072aea4b3b2bb08dc2183a1d3f06e2d484fc7add5b44bc276d0a6eb78233f9e
+SHA1: 58e68b497b951a2163b791c2c8397d0404cbb0f3
+MD5sum: 61fb3f13bc5236e89906046990bcb795
 Description: Linux Containers userspace tools (test binaries)
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
  created using the Control Group and Namespace features included in the Linux
  kernel.
  .
- This package contains the test binaries.
+ This package contains the test binaries. Those binaries are primarily
+ used for autopkgtest and by some developers. They are not meant to be
+ installed on regular user systems.
 
 Package: lxcfs
 Version: 0.10-0ubuntu2+debian1~jessie
@@ -318,20 +320,20 @@ Description: FUSE based filesystem for LXC
 
 Package: python3-lxc
 Source: lxc
-Version: 1:1.1.4-0ubuntu1+debian1~jessie
+Version: 1:1.1.5-0ubuntu2+debian1~jessie
 Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Installed-Size: 150
-Depends: liblxc1 (= 1:1.1.4-0ubuntu1+debian1~jessie), python3 (<< 3.5), python3 (>= 3.4~), libc6 (>= 2.4)
+Installed-Size: 107
+Depends: liblxc1 (= 1:1.1.5-0ubuntu2+debian1~jessie), python3 (<< 3.5), python3 (>= 3.4~), libc6 (>= 2.4)
 Recommends: lxc-templates (>= 0.8.0~rc1-4ubuntu43)
 Homepage: https://linuxcontainers.org
 Priority: optional
 Section: python
-Filename: pool/main/l/lxc/python3-lxc_1.1.4-0ubuntu1+debian1~jessie_amd64.deb
-Size: 60822
-SHA256: 22fafb60530d8af5c97aaabf7f549a3db976aaa51e6278c5f3690e8c5d7a396e
-SHA1: dcbd5394b7026ead2db94aea460fbc4adf47f5eb
-MD5sum: eb5ec9ad196fc48d7978dce485d8131e
+Filename: pool/main/l/lxc/python3-lxc_1.1.5-0ubuntu2+debian1~jessie_amd64.deb
+Size: 61322
+SHA256: 61f6a5a6d0948dd4b285db2a58b8431766729b90a8784f6291246b10d0346b20
+SHA1: 8036bc95ac6045fe8539e0e49d04d5e45eec6877
+MD5sum: 81afac37ea815c6af6d45cebec19a92d
 Description: Linux Containers userspace tools (Python 3.x bindings)
  Containers are insulated areas inside a system, which have their own namespace
  for filesystem, network, PID, IPC, CPU and memory allocation and which can be
